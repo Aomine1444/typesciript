@@ -16,29 +16,29 @@
  * para los profesores en particular se necesita guradar
  * su profesion.
  */
-export class VentaCursosOnline {
-    private nombre: string;
+export class Curso {
+    private curso: string;
     private precio: number;
     private descripcion: string;
     public constructor(nom: string, pre: number, des: string) {
-        this.nombre = nom;
+        this.curso = nom;
         this.precio = pre;
         this.descripcion = des;
     }
 }
-export class estudiante {
+export class Estudiante {
     private nombre: string;
     private apellido: string;
     private correo: string;
-    private direccion: string[];
-    public constructor(nom: string, ape: string, cor: string, direc: string[]) {
+    private direccion: Direccion[];
+    public constructor(nom: string, ape: string, cor: string, direc: Direccion[]) {
         this.nombre = nom;
         this.apellido = ape;
         this.correo = cor;
         this.direccion = direc;
     }
 }
-export class profesor {
+export class Profesor {
     private nombre: string;
     private apellido: string;
     private correo: string;
@@ -50,7 +50,7 @@ export class profesor {
         this.profecion = pro;
     }
 }
-export class direccion {
+export class Direccion {
     private ciudad: string;
     private barrio: string;
     private calle: string;
@@ -62,9 +62,13 @@ export class direccion {
 }
 export class VentaCurso {
     private fecha: string;
-    private nombre: string;
-    public constructor (fe:string,nom:string){
+    private curso: Curso;
+    private estudiante: Estudiante;
+    private profesor: Profesor;
+    public constructor(fe: string, cu: Curso, est: Estudiante, pro: Profesor) {
         this.fecha = fe;
-        this.nombre = nom;
+        this.curso = cu;
+        this.estudiante = est;
+        this.profesor = pro;
     }
 }
