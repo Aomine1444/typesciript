@@ -111,18 +111,18 @@ let estudiante7: Estudiante = new Estudiante("marco", "Miranda", "Mm@tucartera.c
 let estudiante8: Estudiante = new Estudiante("samuel", "Garcia", "sg@tucartera.com", direccion8);
 let estudiante9: Estudiante = new Estudiante("mytziu", "Zambrana", "mz@tucartera.com", direccion9);
 let estudiante10: Estudiante = new Estudiante("miky", "Michele", "mM@tucartera.com", direccion10);
-console.log(estudiante1);
+
 /////////profesores////////
 let profesor1: Profesor = new Profesor("niko", "Galindo", "NG@tucartera.com", "programador", [direccionpro1, direccionpro2]);
 let profesor2: Profesor = new Profesor("niko", "Galindo", "GN@tucartera.com", "programador", [direccionpro3, direccionpro4]);
-console.log(profesor1);
+
 ////////////////cursos///////////
 let curso1: Curso = new Curso("pycon", 30, "es buena", profesor1);
 let curso2: Curso = new Curso("matamaticas", 25, "exelente", profesor2);
 let curso3: Curso = new Curso("ciencias", 35, "exelente", profesor1);
 let curso4: Curso = new Curso("leguaje", 20, "exelente", profesor2);
 let curso5: Curso = new Curso("historia", 15, "exelente", profesor1);
-console.log(curso5);
+
 /////////// venta de cursos///////////
 let VentaCurso1: VentaCurso = new VentaCurso("27/9/2019", curso5, estudiante10);
 let VentaCurso2: VentaCurso = new VentaCurso("27/9/2019", curso1, estudiante1);
@@ -137,3 +137,6 @@ let VentaCurso10: VentaCurso = new VentaCurso("27/9/2019", curso4, estudiante3);
 let VentaCurso11: VentaCurso = new VentaCurso("27/9/2019", curso2, estudiante6);
 let VentaCurso12: VentaCurso = new VentaCurso("27/9/2019", curso3, estudiante9);
 console.log(VentaCurso1);
+console.log(curso1);
+console.log(profesor1);
+console.log(estudiante1);
